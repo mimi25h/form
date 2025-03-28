@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Formulario de registro</h1>
+    </header>
+    
+    <div class="container">
+       
+        <form class="formulario">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="apellido">Apellidos:</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellidos" required>
+                </div>
+                <div class="campo">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="usuario@ejemplo.com" required>
+                </div>
+                <div class="campo">
+                    <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                  
+            <div id="fecha-nacimiento">
+                <select id="dia">
+                    <option>Día</option>
+                      
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+</select>
+
+<select id="mes">
+    <option>Mes </option>
+    <option >Enero</option>
+    <option >Febrero</option>
+    <option >Marzo</option>
+    <option >Abril</option>
+    <option >Mayo</option>
+    <option >Junio</option>
+    <option >Julio</option>
+    <option >Agosto</option>
+    <option >Septiembre</option>
+    <option >Octubre</option>
+    <option >Noviembre</option>
+    <option >Diciembre</option>
+</select>
+
+<select id="año">
+    <option>Año </option>
+    <option value="2025">2025</option>
+    <option value="2024">2024</option>
+    <option value="2023">2023</option>
+    <option value="2022">2022</option>
+    <option value="2021">2021</option>
+    <option value="2020">2020</option>
+    <option value="2019">2019</option>
+    <option value="2018">2018</option>
+    <option value="2017">2017</option>
+    <option value="2016">2016</option>
+    <option value="2015">2015</option>
+    <option value="2014">2014</option>
+    <option value="2013">2013</option>
+    <option value="2012">2012</option>
+  
+    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>¿DE DÓNDE ERES?</legend>
+                
+                <div>
+                    <label for="ciudad">Ciudad</label>
+                    <input type="text"  name="ciudad" placeholder="Introduce tu ciudad">
+                </div>
+            
+                <div>
+                    <label for="codigop">Código postal</label>
+                    <input type="text"  name="codigop" placeholder="Introduce tu código postal">
+                </div>
+            
+                <div>
+                    <label for="pais">País</label>
+                    <select id="pais" name="pais">
+                        <option value="">Selecciona tu país</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="EEUU">EEUU</option>
+                        <option value="Alemania">Alemania</option>
+                        
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>INICIAR SESION</legend>
+                <label for="nombreiniciar">Nombre</label>
+                <input type="text" name="nombreiniciarsesion" placeholder="Introduce nombre" required>
+                <label for="nombreiniciar">Contraseña</label>
+                <input type="text" name="Contraseña" placeholder="Introduce contraseña" required>
+                <label for="nombreiniciar">Vuelve a escribir contraseña</label>
+                <input type="text" name="Contraseña" placeholder="Repetir">
+        
+            </fieldset>
+            <fieldset>
+                <legend>CONDICIONES DE REGISTRO</legend>
+                
+                <p>Deseo recibir ofertas</p>
+                <div class="general">
+                <div class="radio-grupo">
+                    <input type="radio" id="diario" name="ofertas"> </div>
+                
+                    <label class="radio-label" for="diario">Una vez al día</label>
+              
+            
+                 <div class="radio-grupo">
+                    <input type="radio" id="semanal" name="ofertas">
+                    <label for="semanal">Una vez a la semana</label>
+                
+            
+              
+                    <input type="radio" id="mensual" name="ofertas">
+                    <label for="mensual">Una vez al mes</label>
+                </div>
+            
+                <div class="checkbox-container">
+                    <input type="checkbox" id="terminos"  required>
+                    <label for="terminos">Acepto el acuerdo de servicios, la declaración de privacidad y la declaración de uso de cookies</label>
+                </div>
+            </div>
+            </fieldset>
+          
+            <button type="submit">Crear cuenta</button>
+            
+        </form>
+
+       
+        <div class="imagen">
+            <img src="imagenplanta.jpg" alt="Plantas suculentas">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+body {
+    font-family: Arial;
+    background-color: #f1f1ea;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-size: 12px;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100%; 
+    width: 95%; 
+    margin: auto;
+}
+
+.formulario {
+    width: 400px; 
+    height: 800px; 
+   
+
+   
+    border-radius: 10px; 
+}
+
+fieldset {
+    border: 2px solid #4caf50;
+    border-radius: 10px;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+   
+   
+    margin-bottom: 5px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #4caf50;
+    text-align: center;
+    margin-bottom: 10px; 
+}
+
+.campo {
+    margin-bottom: 10px;
+    display: block; 
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 50%; 
+   
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
+
+.imagen {
+    flex: 1;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 60%;
+}
+
+.imagen img {
+    max-height: 100%; 
+    width: 100%; 
+    border-radius: 10px;
+}
+
+#fecha-nacimiento {
+    display: flex;
+    gap: 10px; 
+    width: 50%;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: #2e8131;
+}
+@media (max-width: 600px) {
+   
+    .formulario {
+        width: 65%; 
+    }
+
+    .imagen {
+        width: 30%; 
+        height: 100%;
+    }
+}
